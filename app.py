@@ -12,6 +12,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 import fieldnotes as fn
+import darkmode  # CHANGED (dark mode): adds the dark theme + toggle button to the page
 
 PORT = 8765
 MAX_REC_S = 20
@@ -448,6 +449,11 @@ ping(); setInterval(ping, 15000);
 load(); loadCollection();
 locate();
 </script></body></html>"""
+
+# CHANGED (dark mode): darkmode.py injects the dark-theme CSS, the early theme script
+# (no white flash on load) and the sun/moon toggle button into PAGE.
+# Must stay AFTER the PAGE string above and BEFORE the server serves it.
+PAGE = darkmode.inject(PAGE)
 
 
 def day_streak(js):
