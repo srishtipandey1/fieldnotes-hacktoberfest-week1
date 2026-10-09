@@ -1,0 +1,118 @@
+[
+  {
+    "timestamp": "2026-10-08T20:03:25.452392+00:00",
+    "transcript": "small brown bird with a black bib on a wire",
+    "region": "gujarat",
+    "shortlist": [
+      "bird-01",
+      "bird-02",
+      "plant-01"
+    ],
+    "model_answer": {
+      "candidates": [
+        {
+          "id": "bird-01",
+          "common_name": "bird-01",
+          "confidence": 0.62
+        }
+      ],
+      "followup": "Does it have a black bib?",
+      "grounding_violation": false
+    },
+    "confirmed_label": "bird-01",
+    "correct": true,
+    "in_top3": true,
+    "in_shortlist": true,
+    "device": "desktop-nest",
+    "location": null,
+    "confidence_source": "model",
+    "latency_s": 1.2
+  },
+  {
+    "timestamp": "2026-10-08T20:03:25.452440+00:00",
+    "transcript": "bright green noisy parakeet screeching in the mango tree",
+    "region": "gujarat",
+    "shortlist": [
+      "bird-03",
+      "bird-02",
+      "plant-01"
+    ],
+    "model_answer": {
+      "candidates": [
+        {
+          "id": "bird-03",
+          "common_name": "bird-03",
+          "confidence": 0.81
+        }
+      ],
+      "followup": "Does it have a black bib?",
+      "grounding_violation": false
+    },
+    "confirmed_label": "bird-03",
+    "correct": true,
+    "in_top3": true,
+    "in_shortlist": true,
+    "device": "desktop-nest",
+    "location": null,
+    "confidence_source": "model",
+    "latency_s": 1.2
+  },
+  {
+    "timestamp": "2026-10-08T20:03:25.452449+00:00",
+    "transcript": "big banyan tree with hanging roots sheltering everyone",
+    "region": "gujarat",
+    "shortlist": [
+      "plant-01",
+      "bird-02",
+      "plant-01"
+    ],
+    "model_answer": {
+      "candidates": [
+        {
+          "id": "plant-01",
+          "common_name": "plant-01",
+          "confidence": 0.44
+        }
+      ],
+      "followup": "Does it have a black bib?",
+      "grounding_violation": true
+    },
+    "confirmed_label": "plant-01",
+    "correct": true,
+    "in_top3": true,
+    "in_shortlist": true,
+    "device": "desktop-nest",
+    "location": null,
+    "confidence_source": "rank",
+    "latency_s": 1.2
+  },
+  {
+    "timestamp": "2026-10-08T20:03:25.452456+00:00",
+    "transcript": "something tiny glowing near the compost at night",
+    "region": "gujarat",
+    "shortlist": [
+      "bird-02",
+      "bird-02",
+      "plant-01"
+    ],
+    "model_answer": {
+      "candidates": [
+        {
+          "id": "bird-02",
+          "common_name": "none",
+          "confidence": 0.3
+        }
+      ],
+      "followup": "Does it have a black bib?",
+      "grounding_violation": false
+    },
+    "confirmed_label": "none",
+    "correct": true,
+    "in_top3": true,
+    "in_shortlist": true,
+    "device": "desktop-nest",
+    "location": null,
+    "confidence_source": "model",
+    "latency_s": 1.2
+  }
+]
